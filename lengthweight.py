@@ -32,7 +32,7 @@ st.text('4. Älä käytä sarakeotsikoita')
 data=st.file_uploader('Lataa csv-tiedosto',type=["csv"], accept_multiple_files=False)
 
 if data==None:
-    data = "../tyhjä.csv"
+    data = "tyhjä.csv"
 
 df = pd.read_csv(data, names=["pituus", "paino"])
 
